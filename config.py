@@ -3,7 +3,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+try:
+    import streamlit as st
+    GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY", ""))
+except:
+    GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+
 LLM_MODEL = "llama-3.3-70b-versatile"
 
 MARKET_OPEN  = "09:15"

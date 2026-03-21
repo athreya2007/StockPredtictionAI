@@ -7,3 +7,4 @@ storage/cache.db
 *.bin
 venv/
 .venv/
+.streamlit/secrets.toml
