@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+storage/cache.db
+.cache/
+*.safetensors
+*.bin
+venv/
+.venv/
