@@ -38,7 +38,7 @@ if st.button("🚀 Run Screener", type="primary"):
         df.columns = ["Ticker","Price","Signal","Bullish/6",
                       "RSI","RSI Signal","MACD","EMA Trend","RR"]
         st.dataframe(
-            df.style.applymap(color_rec, subset=["Signal"]),
+            df.style.map(color_rec, subset=["Signal"]),
             use_container_width=True,
             hide_index=True,
         )

@@ -2,8 +2,10 @@ yfinance
 nsetools==1.0.11
 feedparser==6.0.11
 pandas
-numpy
+numpy==2.2.6
+numba==0.61.2
 pandas-ta
+torch
 langchain
 langchain-groq
 langchain-community
